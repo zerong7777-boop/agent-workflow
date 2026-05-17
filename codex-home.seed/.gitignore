@@ -1,0 +1,27 @@
+# Private local agent state
+auth.json
+history.jsonl
+*.sqlite
+*.db
+*.log
+*.local.*
+.env
+.env.*
+
+# Runtime folders
+sessions/
+cache/
+tmp/
+indexes/
+memories/private/
+.codex/
+.sandbox/
+.sandbox-secrets/
+
+# Generated outputs
+artifacts/**/*.tmp
+artifacts/**/*.cache
+
+# System files
+.DS_Store
+Thumbs.db

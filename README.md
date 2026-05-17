@@ -49,6 +49,9 @@ The workflow does not depend on a specific AI tool. A runtime can be a terminal 
 ## Repository Map
 
 ```text
+BOOTSTRAP.md           Agent-readable bootstrap protocol
+AGENT.md               Copy-paste prompt for local coding agents
+codex-home.seed/       Clean local workflow home skeleton
 docs/
   workflow/           Core workflow model and research loop
   operating-model/    How to run tasks, memory, and handoffs
@@ -63,6 +66,28 @@ checklists/           Reusable quality gates
 ```
 
 ## Quick Start
+
+### Use With Your Own Agent
+
+Paste this into Codex, Claude Code, Cursor Agent, Trae, or another local coding agent:
+
+```text
+Please bootstrap a clean local agent workflow home from this public repository:
+
+https://github.com/zerong7777-boop/agent-workflow.git
+
+Read BOOTSTRAP.md from that repository and follow it exactly.
+
+Create the workflow home in a new local directory named codex-home unless I specify another target path. Copy only public workflow assets, templates, checklists, docs, examples, and the clean seed structure. Do not copy auth files, tokens, API keys, session logs, raw private transcripts, SQLite databases, cache directories, local indexes, temporary files, machine-specific config, or private project history.
+
+If the target directory already exists, do not overwrite files. First report what would be added, skipped, or conflicted, then ask me before merging.
+
+When finished, report the target directory, files copied, directories created, files skipped, conflicts, and the recommended first task files to create.
+```
+
+For a shorter entrypoint, open `AGENT.md`.
+
+### Manual Use
 
 1. Copy `templates/task/task.md` into your own task folder.
 2. Fill in the goal, constraints, unknowns, and success criteria.
