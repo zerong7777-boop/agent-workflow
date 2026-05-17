@@ -1,0 +1,27 @@
+/.DS_Store
+/Thumbs.db
+
+# Local agent state
+/sessions/
+/state_*.sqlite
+/logs_*.sqlite
+/history.jsonl
+/auth.json
+/config.local.*
+/.codex/
+/.sandbox/
+/.sandbox-secrets/
+
+# Generated or private data roots
+/data/
+/indexes/
+/memories/private/
+/tmp/
+/cache/
+
+# Dependencies and build outputs
+/node_modules/
+/dist/
+/__pycache__/
+*.pyc
+
